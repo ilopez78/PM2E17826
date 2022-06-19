@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E17826.MainPage">
+
+    
+     
+    <!--<ContentPage.ToolbarItems >
+        <ToolbarItem Text="NUEVA UBICACION"
+                     Clicked="toolbar01_Clicked"
+                     x:Name="toolbar01" ></ToolbarItem>
+        
+    </ContentPage.ToolbarItems>-->
+    <StackLayout  Padding="5,10,5,10" >
+
+        <Label Text="Imagen" />
+
+        <Image Source="https://img2.freepng.es/20180921/gxa/kisspng-universidad-tecnolgica-de-honduras-tegucigalpa-u-clases-uth-timeline-timetoast-timelines-5ba4e28494c0d0.3323374415375325486093.jpg" x:Name="imagen" HorizontalOptions="Center" HeightRequest="70" WidthRequest="60" />
+
+
+
+        <StackLayout Orientation="Horizontal"  BackgroundColor="White" Padding="2,2,2,2" VerticalOptions="Center" HorizontalOptions="Center">
+        <Button Text="NuevaLat/Long" FontSize="15" FontAttributes="Bold" x:Name="btn01" Clicked="btn01_Clicked" 
+              WidthRequest="160" HeightRequest="45" 
+             CornerRadius="60" VerticalOptions="Start" HorizontalOptions ="Start" BackgroundColor   ="Red" Margin="0,3,0,3"/>
+
+ 
+
+        </StackLayout>
+        <Button Text="Tomar Foto" x:Name="btncargarimg" Clicked="btncargarimg_Clicked" />
+        <Label Text="LATITUD" TextColor="White" FontSize="20" FontAttributes="Bold"/>
+        <Entry Text=""  Keyboard="Text" x:Name="txtlatitud" TextColor="White" />
+
+        <Label Text="LONGITUD" TextColor="White" FontSize="20" FontAttributes="Bold"/>
+        <Entry Text=""  Keyboard="Text"  TextColor="White" x:Name="txtlongitud" />
+
+        <Label Text="DESCRIPCION" TextColor="White" FontSize="20" FontAttributes="Bold"/>
+        <Entry Text=""  Keyboard="Text" x:Name="txtdescripcion"/>
+
+        <StackLayout Orientation="Horizontal"  BackgroundColor="White" Padding="2,2,2,2">
+        <Button Text="AGREGAR" x:Name="btnguardar" FontSize="15" FontAttributes="Bold" 
+          WidthRequest="160" Clicked="btnguardar_Clicked"
+         HeightRequest="45" CornerRadius="60" VerticalOptions="Start" 
+         HorizontalOptions ="Start" BackgroundColor   ="SaddleBrown" Margin="0,3,0,3"/>
+
+        <Button Text="LISTA SITIOS " x:Name="ubicaciones" FontSize="15" FontAttributes="Bold" 
+         WidthRequest="160"
+         HeightRequest="45" CornerRadius="60" VerticalOptions="EndAndExpand" 
+         HorizontalOptions ="EndAndExpand" BackgroundColor   ="SaddleBrown" Clicked="btn02_Clicked" Margin="0,3,0,3"/>
+
+         
+
+        </StackLayout>
+        <StackLayout Orientation="Horizontal"  BackgroundColor="White" Padding="2,1,2,1" VerticalOptions="Center" HorizontalOptions="Center">
+            <Button Text="SALIR " x:Name="Btnsalir" FontSize="15" FontAttributes="Bold" 
+         WidthRequest="160"
+         HeightRequest="45" CornerRadius="60" VerticalOptions="Center" 
+         HorizontalOptions ="Center" BackgroundColor   ="SaddleBrown" Clicked="Btnsalir_Clicked" Margin="0,3,0,3"/>
+        </StackLayout>
+    </StackLayout>
+
+
+
+
+</ContentPage>
